@@ -27,7 +27,7 @@ When this occurs, all nodes return an ``Unknown command`` error to all queries. 
    | wsrep_cluster_status | Primary |
    +----------------------+---------+
 
-The return value ``Primary`` indicates that it the node is part of the Primary Component.  When the query returns any other value it indicates that the node is part of a nonoperational component.  If none of the nodes return the value ``Primary``, it means that you need to reset the quorum.
+The return value ``Primary`` indicates that the node is part of the Primary Component.  When the query returns any other value it indicates that the node is part of a nonoperational component.  If none of the nodes return the value ``Primary``, it means that you need to reset the quorum.
 
 .. note:: Bear in mind that situations where none of the nodes show as part of the Primary Component are very rare.  In the event that you do find one or more nodes that return the value ``Primary``, this indicates an issue with network connectivity rather than a need to reset the quorum.  Troubleshoot the connection issue.  Once the nodes regain network connectivity they automatically resynchronize with the Primary Component.
 
