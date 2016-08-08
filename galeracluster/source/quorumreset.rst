@@ -13,7 +13,7 @@
 .. index::
    single: Primary Component; Nominating
 
-Occasionally, you may find your nodes no longer consider themselves part of the :term:`Primary Component`.  For instance, in the event of a network failure, the failure of more than half of the cluster, or a split-brain situation.  In these cases, the node come to suspect that there is another Primary Component, to which they are no longer connected.
+Occasionally, you may find your nodes no longer consider themselves part of the :term:`Primary Component`.  For instance, in the event of a network failure, the failure of more than half of the cluster, or a split-brain situation.  In these cases, the nodes come to suspect that there is another Primary Component, to which they are no longer connected.
 
 When this occurs, all nodes return an ``Unknown command`` error to all queries.  You can check if this is happening using the :ref:`wsrep_cluster_status <wsrep_cluster_status>` status variable.  Run the following query on each node:
 
